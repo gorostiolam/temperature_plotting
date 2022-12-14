@@ -1,0 +1,6 @@
+matplotlib
+pandas==1.4.1
+pytest==7.0.1
+scipy==1.9.3
+Sphinx
+sphinx-rtd-theme
