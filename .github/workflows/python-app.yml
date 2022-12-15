@@ -65,7 +65,8 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Build documentation
       run: |
-        sphinx-build doc _build
+        cd doc
+        make html
     - name: Publish documentation
       uses: peaceiris/actions-gh-pages@v3
       with:
