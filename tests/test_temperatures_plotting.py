@@ -15,6 +15,9 @@ def test_compute_mean():
     
     with pytest.raises(TypeError):
         calc = tpl.compute_mean(["a", "b", "c"])
+       
+    calc = tpl.compute_mean(["a", "b", "c"])
+    assert calc == None
 
 
 def test_main():
